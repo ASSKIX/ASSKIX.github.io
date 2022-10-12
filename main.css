@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto" , sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./asset/4kback.jpg);
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.logo{
+    width: 300px;
+    cursor: pointer;
+}
+.menu_hamb{
+    width: 50px;
+    cursor: pointer;
+}
+.nav_bar{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    
+}
+nav{
+    flex: 1; /* supa important*/ 
+    text-align: right; /*this too*/
+}
+nav ul li{
+    display: inline-block;
+    margin: 50px;
+
+}
+nav ul li a {
+    color: azure;
+    font-size: 20px;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    
+
+}
+nav li a{
+    transition: all 0.3s ease 0s;
+}
+nav li a:hover{
+    color: #ff5f00;
+
+}
+.row{
+    display: flex;
+    height: 80%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    font-size: 100 px;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    color: azure;
+    padding-bottom: 30px;
+}
+p {
+    color: azure;
+    line-height: 15px;
+    font-weight: bold;
+}
+button{
+    padding: 10px 25px ;
+    margin: 10px;
+    background-color: rgba(255, 95, 0, 1);
+    font-size: 15px;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 70px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+button:hover{
+    background-color: rgba(255, 95, 169, 0.8);
+
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 30px 10px 40px;
+    background-position: center;
+    background-size: cover ;
+    
+
+}
+.c1{
+    background-image: url(./asset/brotherhood.jpg);
+}
+.c1:hover{
+    animation: float 0.5s infinite alternate-reverse;
+}
+.c2{
+    background-image: url(./asset/origins.jpg);
+}
+.c2:hover{
+    animation: float 0.5s infinite alternate-reverse;
+}
+.c3{
+    background-image: url(./asset/syndicate.jpg);
+}
+.c3:hover{
+    animation: float 0.5s infinite alternate-reverse;
+}
+.c4{
+    background-image: url(./asset/odyssy.jpg);
+    
+}
+.c4:hover{
+    animation: float 0.5s infinite alternate-reverse;
+}
+h5{
+    color: azure;
+    text-shadow: 0 0 5px #999;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+
+    }
+    100%{
+        transform: translateY(10px);
+
+    }
+}
+
+/*.container:after{  the shader or yet the gradient is absolute over the image using psuedo selectors which is after 
+    position: absolute;
+    display: block;
+    content: "";
+    height: 100%;
+    width:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3));
+    background-position: center;
+    background-size: contain;
+}*/
